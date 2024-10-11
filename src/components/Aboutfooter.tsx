@@ -1,12 +1,12 @@
-import {Circle, Dna, Globe2, Languages} from "lucide-react"
+import {Circle, Dna, Globe2, Languages, MapPinned} from "lucide-react"
 
 const Aboutfooter = () => {
 
 
     const items = [
-        {name:"Language", answer:"English UK", icon:<Languages className="h-11 w-11" />},
-        {name:"Nationality",answer:"India", icon:<Globe2   className="h-8 w-8" />},
-        {name:"Gender",answer:"Male", icon:<Dna  className="h-8 w-8" />},
+        {name:"Language", answer:"English, Cantonese, Mandarin", icon:<Languages className="h-11 w-11" />},
+        {name:"Nationality",answer:"Hong Kong", icon:<Globe2   className="h-8 w-8" />},
+        {name:"Place i worked",answer:"Hong Kong, Taiwan, Lyon", icon:<MapPinned  className="h-8 w-8" />},
     ]
 
 

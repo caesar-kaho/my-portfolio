@@ -4,30 +4,28 @@ import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
 import html from '../../../public/html.png'
 import css from '../../../public/css.png'
-import scss from '../../../public/scss.png'
 import js from '../../../public/js.png'
 import ts from '../../../public/ts.png'
+import springboot from '../../../public/springboot.png'
 import react from '../../../public/react.png'
 import nextjs from '../../../public/nextjs.jpeg'
-import cplus from '../../../public/c++.jpeg'
-import tailwind from '../../../public/tailwindcss.png'
+import java from '../../../public/java.png'
 import github from '../../../public/github.png'
 import vscode from '../../../public/vscode.png'
 import FramerWrapper from "@/components/animation/FramerWrapper";
 const skillPage = () => {
 
     const language = [
+        {alt:"java", img:java},
         {alt:"html", img:html},
         {alt:"css", img:css},
         {alt:"js", img:js},
         {alt:"ts", img:ts},
-        {alt:"cplus", img:cplus},
     ]
     const framework = [
+        {alt:"springboot", img:springboot},
         {alt:"react", img:react},
         {alt:"nextjs", img:nextjs},
-        {alt:"scss", img:scss},
-        {alt:"tailwind", img:tailwind},
         {alt:"github", img:github},
         {alt:"vscode", img:vscode},
     ]
@@ -45,10 +43,7 @@ const skillPage = () => {
         <FramerWrapper y={0} x={200} >
 
         <p className="font-poppins text-xl w-full text-primary max-sm:text-lg">
-          Currently i am a fresher and i have a solid understand of HTML5, CSS3, JS, TS and React, including
-          responsive design principles. I specialize in building web
-          applications and sites using Javascript, Typescript, React, Nextjs &
-          Node.
+          Content
         </p>
         </FramerWrapper>
         <FramerWrapper y={100} delay={0.30} className="block">

@@ -6,10 +6,8 @@ import { Circle, Heart, User2 } from "lucide-react";
 const page = () => {
   const items = [
     { hobby: "coding" },
-    { hobby: "playing games" },
-    { hobby: "Watching Anima" },
-    { hobby: "Tech Blog writing" },
-    { hobby: "creating Cool Projects" },
+    { hobby: "boxing" },
+    { hobby: "cycling" },
   ];
 
   return (
@@ -22,18 +20,12 @@ const page = () => {
       <div className="flex flex-col gap-3">
        
           <Heading>
-            Software Engineer And Web <br /> Developer, Based In India.
+            Software Engineer And Web <br /> Developer, Based In Taiwan.
           </Heading>
    
         <FramerWrapper y={0} x={100} >
           <p className=" font-poppins text-xl w-full text-primary max-sm:text-lg">
-            I am a Full Stack Web Developer from Ramgarh cantt, Jharkhand,
-            India. I love crafting cool web projects and also open-source
-            contribuitions. My biggest achievement lies in my mastery of
-            JavaScript and CSS, ensuring pixel-perfect designs that captivate
-            users. With a keen eye for detail and a commitment to delivery
-            speed, I excel at creating seamless and responsive interfaces that
-            leave a lasting impression.
+            I am a Full Stack Web Developer from Taipei, Taiwan. 
           </p>
         </FramerWrapper>
       </div>
