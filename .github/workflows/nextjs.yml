@@ -29,13 +29,7 @@ jobs:
         npm install
         npm install sharp
         npx update-browserslist-db@latest
-    
-    - name: Build
-      run: npm run build
-      env:
-        # Add any required environment variables here
-        NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-    
+
     # Enable caching for faster builds
     - name: Cache Next.js build
       uses: actions/cache@v3
@@ -43,6 +37,12 @@ jobs:
         path: |
           .next/cache
         key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+    
+    - name: Build
+      run: npm run build
+      env:
+        # Add any required environment variables here
+        NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
 
   deploy:
     environment:
