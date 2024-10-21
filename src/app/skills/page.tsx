@@ -2,23 +2,22 @@ import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFotter";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
-import html from '../../../public/html.png'
-import css from '../../../public/css.png'
-import js from '../../../public/js.png'
-import ts from '../../../public/ts.png'
-import springboot from '../../../public/springboot.png'
-import react from '../../../public/react.png'
-import nextjs from '../../../public/nextjs.jpeg'
-import java from '../../../public/java.png'
-import github from '../../../public/github.png'
-import vscode from '../../../public/vscode.png'
+import js from '../../../public/js.png';
+import ts from '../../../public/ts.png';
+import springboot from '../../../public/springboot.png';
+import react from '../../../public/react.png';
+import nextjs from '../../../public/nextjs.jpeg';
+import java from '../../../public/java.png';
+import mybatis from '../../../public/mybatis.png';
+import mssql from '../../../public/mssql.png';
+import mongodb from '../../../public/mongodb.png';
+import git from '../../../public/git.png';
+import svn from '../../../public/svn.png';
 import FramerWrapper from "@/components/animation/FramerWrapper";
 const skillPage = () => {
 
     const language = [
         {alt:"java", img:java},
-        {alt:"html", img:html},
-        {alt:"css", img:css},
         {alt:"js", img:js},
         {alt:"ts", img:ts},
     ]
@@ -26,9 +25,15 @@ const skillPage = () => {
         {alt:"springboot", img:springboot},
         {alt:"react", img:react},
         {alt:"nextjs", img:nextjs},
-        {alt:"github", img:github},
-        {alt:"vscode", img:vscode},
+        {alt:"mybatis", img:mybatis}
+
     ]
+    const database = [
+      {alt:"mssql", img:mssql},
+      {alt:"mongodb", img:mongodb},
+      {alt:"git", img:git},
+      {alt:"svn", img:svn}
+  ]
        
 
   return (
@@ -56,10 +61,18 @@ const skillPage = () => {
         </FramerWrapper>
         <FramerWrapper  className="block" y={100} delay={0.32}>
         <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           Framework/Libraries and Version Control
+           Framework/Libraries
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
         <SkillsFooter items={framework} />
+        </div>
+        </FramerWrapper>
+        <FramerWrapper  className="block" y={100} delay={0.34}>
+        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+           Database/Version Control
+        </h1>
+        <div className="w-full h-fit flex-row flex justify-between items-center">
+        <SkillsFooter items={database} />
         </div>
         </FramerWrapper>
       </div>
