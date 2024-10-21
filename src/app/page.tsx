@@ -9,8 +9,8 @@ import FramerWrapper from "@/components/animation/FramerWrapper";
 export const siteConfig = {
   name: "Ka Ho Kwok",
   description: "I am a Passionate Software Developer",
-  ogImage: "https://mdTaquiImam.vercel.app/og-image.png",
-  url: "https://mdTaquiImam.vercel.app",
+  ogImage: "bg-image.jpg",
+  url: "my-portfolio-kahokwok.vercel.app",
 }
 export default function Home() {
   return (

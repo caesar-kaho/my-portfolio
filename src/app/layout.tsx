@@ -16,7 +16,7 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mdTaquiImam.vercel.app"),
+  metadataBase: new URL("https://my-portfolio-kahokwok.vercel.app/"),
   title: {
     default: siteConfig.name,
     template: `%s - Software Engineer`,
@@ -25,22 +25,6 @@ export const metadata: Metadata = {
 
   // added new keywords for seo
   keywords: [
-    "md",
-    "taqui",
-    "imam",
-    "Md",
-    "MD",
-    "TAQUI",
-    "Taqui",
-    "Imam",
-    "Imam",
-    "Md Taqui Imam",
-    "md taqui imam",
-    "mdtaqui",
-    "mdtaquiimam",
-    "taqui imam",
-    "Taqui Imam",
-    "Taquiimam",
     "portfolio",
     "web developer",
     "web",
@@ -48,19 +32,14 @@ export const metadata: Metadata = {
     "developer",
     "PROGRAMMER ",
     "programmer ",
-    "MD TAQUI IMAM ",
-    "website",
-    "@Taquiimam",
-    "Taquiimam",
-    "taqui developer",
   ],
   authors: [
     {
-      name: "Taqui Imam",
-      url: "https://github.com/taqui-786",
+      name: "Ka ho Kwok",
+      url: "https://github.com/caesar-kaho",
     },
   ],
-  creator: "Taqui imam",
+  creator: "Ka ho Kwok",
 
   openGraph: {
     type: "website",
