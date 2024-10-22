@@ -2,56 +2,56 @@ import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFotter";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
-import js from '../../../public/language/js.png';
-import ts from '../../../public/language/ts.png';
-import springboot from '../../../public/framework/springboot.png';
-import react from '../../../public/framework/react.png';
-import nextjs from '../../../public/framework/nextjs.jpeg';
-import java from '../../../public/language/java.png';
-import mybatis from '../../../public/framework/mybatis.png';
-import mssql from '../../../public/database/mssql.png';
-import mongodb from '../../../public/database/mongodb.png';
-import git from '../../../public/database/git.png';
-import svn from '../../../public/database/svn.png';
-import html from '../../../public/language/html.png';
-import css from '../../../public/language/css.png';
+import js from '../../../public/frontend/js.png';
+import ts from '../../../public/frontend/ts.png';
+import springboot from '../../../public/backend/springboot.png';
+import react from '../../../public/frontend/react.png';
+import nextjs from '../../../public/frontend/nextjs.jpeg';
+import java from '../../../public/backend/java.png';
+import mybatis from '../../../public/backend/mybatis.png';
+import mssql from '../../../public/backend/mssql.png';
+import mongodb from '../../../public/backend/mongodb.png';
+import git from '../../../public/tool/git.png';
+import svn from '../../../public/tool/svn.png';
+import html from '../../../public/frontend/html.png';
+import css from '../../../public/frontend/css.png';
 import github from '../../../public/tool/github.png';
-import tailwind from '../../../public/framework/tailwind.png';
+import tailwind from '../../../public/frontend/tailwind.png';
 import docker from '../../../public/tool/docker.png';
 import vercel from '../../../public/tool/vercel.ico';
-import nodejs from '../../../public/framework/nodejs.png';
+import nodejs from '../../../public/backend/nodejs.png';
 import webpack from '../../../public/tool/webpack.png';
 
 import FramerWrapper from "@/components/animation/FramerWrapper";
 const skillPage = () => {
 
-    const language = [
-        {alt:"java", img:java},
-        {alt:"js", img:js},
+    const frontend = [
+        {alt:"nextjs", img:nextjs},
+        {alt:"react", img:react},
         {alt:"ts", img:ts},
+        {alt:"js", img:js},
+        {alt:"tailwind", img:tailwind},
         {alt:"html", img:html},
         {alt:"css", img:css},
     ]
-    const framework = [
+
+    const backend = [
+        {alt:"java", img:java},
         {alt:"springboot", img:springboot},
-        {alt:"react", img:react},
-        {alt:"nextjs", img:nextjs},
         {alt:"nodejs", img:nodejs},
         {alt:"mybatis", img:mybatis},
-        {alt:"tailwind", img:tailwind},
+        {alt:"mssql", img:mssql},
+        {alt:"mongodb", img:mongodb},
 
     ]
-    const database = [
-      {alt:"mssql", img:mssql},
-      {alt:"mongodb", img:mongodb},
-      {alt:"git", img:git},
-      {alt:"svn", img:svn}
-    ]
+
     const tool = [
       {alt:"github", img:github},
-      {alt:"docker", img:docker},
+      {alt:"git", img:git},
+      {alt:"svn", img:svn},
       {alt:"vercel", img:vercel},
       {alt:"webpack", img:webpack},
+      {alt:"docker", img:docker},
     ]
        
 
@@ -72,31 +72,23 @@ const skillPage = () => {
         </FramerWrapper>
         <FramerWrapper y={100} delay={0.30} className="block">
         <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           Programming Languages
+           Frontend
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
-        <SkillsFooter items={language} />
+        <SkillsFooter items={frontend} />
         </div>
         </FramerWrapper>
         <FramerWrapper  className="block" y={100} delay={0.32}>
         <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           Framework/Libraries
+           Backend
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
-        <SkillsFooter items={framework} />
+        <SkillsFooter items={backend} />
         </div>
         </FramerWrapper>
         <FramerWrapper  className="block" y={100} delay={0.34}>
         <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           Database/Version Control
-        </h1>
-        <div className="w-full h-fit flex-row flex justify-between items-center">
-        <SkillsFooter items={database} />
-        </div>
-        </FramerWrapper>
-        <FramerWrapper  className="block" y={100} delay={0.34}>
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           DevOps/Tools
+           Tool
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
         <SkillsFooter items={tool} />
