@@ -8,12 +8,32 @@ const projectsPage = () => {
   // PROJECTS DATA
   const Projects = [
     {
-      title: "Devzone - A community chat app for devs",
+      title: "Project Portfolio",
       description:
-        `DevZone is the ultimate chat platform for developers
-to connect, collaborate, and code together. Join the conversation and level up your coding journey.`,
-      tags: ["Zustand", "Supabase", "Shadcn Ui", "Nextjs"],
-      link: "https://devzone-ti.vercel.app/",
+        `A simple and Beautiful Porfolio made with Nextjs and Shadcn Ui.`,
+      tags: ["Nextjs", "TypeScript", "tailwindcss"],
+      link: "https://github.com/caesar-kaho/my-portfolio"
+    },
+    {
+      title: "Nextjs Dashboard",
+      description:
+        `Dashboard with Nextjs`,
+      tags: ["Nextjs", "TypeScript", "vercel"],
+      link: "https://github.com/caesar-kaho/nextjs-dashboard"
+    },
+    {
+      title: "E-commerce Backend ",
+      description:
+        `shopping mall with spring boot`,
+      tags: ["Spring Boot", "Java", "H2 Database"],
+      link: "https://github.com/caesar-kaho/springboot-mall"
+    },
+    {
+      title: "Line chatbot",
+      description:
+        `using C# with .NET Core Web API`,
+      tags: ["C#", ".NET Core Web API", "MariaDB"],
+      link: "https://github.com/caesar-kaho/Linebot_API"
     },
   ];
 

@@ -16,6 +16,23 @@ interface projectcardprops {
   num: number
 }
 const ProjectCards: React.FC<projectcardprops> = ({ value, num }) => {
+  const getTagStyles = (tag: string) => {
+    const styles: { [key: string]: string } = {
+      'Nextjs': 'bg-slate-950 text-white',
+      'C#': 'bg-yellow-100 text-yellow-800',
+      'TypeScript': 'bg-blue-500 text-white',
+      'Java': 'bg-red-300 text-white',
+      'Spring Boot': 'bg-emerald-300 text-white',
+      '.NET Core Web API': 'bg-fuchsia-400 text-white',
+      'MariaDB':'bg-violet-500 text-white',
+      'H2 Database': 'bg-slate-600 text-white',
+      'vercel': 'bg-slate-950 text-white',
+      'tailwindcss': 'bg-cyan-400 text-white',
+
+    };
+    return styles[tag] || 'bg-gray-100 text-gray-800';
+  };
+
   return (
   <FramerWrapper className={"max-w-[32%] min-h-[345px] max-lg:max-w-full"} y={0} scale={0.8} delay={num/4} duration={0.15}>
     <Card className="w-full h-full">
@@ -29,7 +46,7 @@ const ProjectCards: React.FC<projectcardprops> = ({ value, num }) => {
         {
           value.tags.map((itm:string, indx:number) => {
             // return <Badge key={indx}>{itm}</Badge>
-            return <span className={`inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium ${itm === 'Nextjs' && 'bg-teal-100 text-teal-800' || itm === 'Freelancing' && 'bg-yellow-100 text-yellow-800 ' || itm === 'Shadcn Ui' && 'bg-blue-100 text-blue-800' || itm === 'Typescript' && 'bg-red-100 text-red-800' || 'bg-gray-100 text-gray-800'}  `} key={indx}>{itm}</span>
+            return <span className={`inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium ${getTagStyles(itm)}`} key={indx}>{itm}</span>
           })
         }
         </div>
