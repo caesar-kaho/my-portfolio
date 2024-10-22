@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import { siteConfig } from "./page";
+import bgImage from "../../public/bg-image.jpg";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
@@ -72,9 +74,14 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${rubik.variable}`}>
         <main
           className={cn(
-            "flex  relative  break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 bg-[radial-gradient(#2f7df4_1px,transparent_1px)] [background-size:16px_16px]",
-            { "bg-white": "#E6E7EB" }
+            "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 max-sm:pt-20"
           )}
+          style={{
+            backgroundImage: `url(${bgImage.src})`,
+            backgroundSize: 'cover', // Ensures the image covers the entire area
+            backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+            backgroundPosition: 'center', // Centers the image
+          }}
         >
           {/* NAVBAR ->  */}
           <Navbar />

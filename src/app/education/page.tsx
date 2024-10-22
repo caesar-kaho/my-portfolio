@@ -24,7 +24,7 @@ const educationPage = () => {
               Master of Business Administration, <br /> National Taiwan University of Sport, Taiwan
             </div>
             <p className=" font-poppins text-base w-full text-primary  max-sm:text-xs">
-              Content
+              Developed a strong understanding of business operations and project management.
             </p>
           </FramerWrapper>
         </div>
@@ -39,7 +39,7 @@ const educationPage = () => {
               Bachelor of Economic, <br /> Tamkang University, Taiwan
             </div>
             <p className=" font-poppins text-base w-full text-primary  max-sm:text-xs">
-              Content
+              Cultivated analytical thinking and problem-solving skills, with a focus on data analysis, financial modeling, and market trends.
             </p>
           </FramerWrapper>
         </div>
