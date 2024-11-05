@@ -16,10 +16,10 @@ import FramerWrapper from "@/components/animation/FramerWrapper";
 const morePage = () => {
   const morelink = [
     {
-      title: "Dev.to",
+      title: "daily.dev",
       description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Dev.to ",
-      link: "https://dev.to/random_ti",
+        "Sharing tech content to the community.",
+      link: "https://app.daily.dev/kaho",
     },
   ];
 

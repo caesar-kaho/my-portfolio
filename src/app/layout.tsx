@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import {  Poppins, Rubik } from "next/font/google";
+import { Poppins, Rubik } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import { siteConfig } from "./page";
-import bgImage from "../../public/bg-image.jpg";
+import bgImageLight from "../../public/bg-image-light.jpg";
+import bgImageDark from "../../public/bg-image-dark.jpg";
+import { ThemeProvider } from "@/components/Theme-provider";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -57,12 +60,12 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${siteConfig.url}/og-image.png`],
-    creator: "@Taquiimam14",
   },
   icons: {
     icon: "/favicon.ico",
   },
 };
+
 
 export default function RootLayout({
   children,
@@ -70,23 +73,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+
     <html lang="en">
       <body className={`${poppins.variable} ${rubik.variable}`}>
-        <main
-          className={cn(
-            "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 max-sm:pt-20"
-          )}
-          style={{
-            backgroundImage: `url(${bgImage.src})`,
-            backgroundSize: 'cover', // Ensures the image covers the entire area
-            backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-            backgroundPosition: 'center', // Centers the image
-          }}
-        >
-          {/* NAVBAR ->  */}
-          <Navbar />
-          {children}
-        </main>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          <main
+            className={cn(
+              "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 max-sm:pt-20"
+            )}
+            style={{
+              backgroundImage: `url(${bgImageLight.src})`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* NAVBAR ->  */}
+            <Navbar />
+            <div className="absolute top-7 left-10">
+              <ModeToggle />
+            </div>
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

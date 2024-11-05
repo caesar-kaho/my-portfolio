@@ -2,25 +2,26 @@ import Heading from "@/components/Heading";
 import SkillsFooter from "@/components/SkillsFotter";
 import { Badge } from "@/components/ui/badge";
 import { Lightbulb } from "lucide-react";
-import js from '../../../public/frontend/js.png';
-import ts from '../../../public/frontend/ts.png';
-import springboot from '../../../public/backend/springboot.png';
-import react from '../../../public/frontend/react.png';
-import nextjs from '../../../public/frontend/nextjs.jpeg';
-import java from '../../../public/backend/java.png';
-import mybatis from '../../../public/backend/mybatis.png';
-import mssql from '../../../public/backend/mssql.png';
-import mongodb from '../../../public/backend/mongodb.png';
-import git from '../../../public/tool/git.png';
-import svn from '../../../public/tool/svn.png';
-import html from '../../../public/frontend/html.png';
-import css from '../../../public/frontend/css.png';
-import github from '../../../public/tool/github.png';
-import tailwind from '../../../public/frontend/tailwind.png';
-import docker from '../../../public/tool/docker.png';
-import vercel from '../../../public/tool/vercel.ico';
-import nodejs from '../../../public/backend/nodejs.png';
-import webpack from '../../../public/tool/webpack.png';
+import js from 'public/frontend/js.png';
+import ts from 'public/frontend/ts.png';
+import springboot from 'public/backend/springboot.png';
+import react from 'public/frontend/react.png';
+import nextjs from 'public/frontend/nextjs.jpeg';
+import java from 'public/backend/java.png';
+import mybatis from 'public/backend/mybatis.png';
+import mssql from 'public/backend/mssql.png';
+import mongodb from 'public/backend/mongodb.png';
+import git from 'public/tool/git.png';
+import svn from 'public/tool/svn.png';
+import html from 'public/frontend/html.png';
+import css from 'public/frontend/css.png';
+import github from 'public/tool/github.png';
+import tailwind from 'public/frontend/tailwind.png';
+import docker from 'public/tool/docker.png';
+import vercel from 'public/tool/vercel.ico';
+import nodejs from 'public/backend/nodejs.png';
+import webpack from 'public/tool/webpack.png';
+import graphql from 'public/tool/graphql.png';
 
 import FramerWrapper from "@/components/animation/FramerWrapper";
 const skillPage = () => {
@@ -43,6 +44,7 @@ const skillPage = () => {
         {alt:"mssql", img:mssql},
         {alt:"mongodb", img:mongodb},
 
+
     ]
 
     const tool = [
@@ -52,6 +54,7 @@ const skillPage = () => {
       {alt:"vercel", img:vercel},
       {alt:"webpack", img:webpack},
       {alt:"docker", img:docker},
+      {alt:"graphql", img:graphql}
     ]
        
 
@@ -64,12 +67,6 @@ const skillPage = () => {
       </Badge>
       <div className="flex flex-col gap-3">
         <Heading>My Technical Experience/Skills.</Heading>
-        <FramerWrapper y={0} x={200} >
-
-        <p className="font-poppins text-xl w-full text-primary max-sm:text-lg">
-          Content
-        </p>
-        </FramerWrapper>
         <FramerWrapper y={100} delay={0.30} className="block">
         <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
            Frontend

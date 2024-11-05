@@ -1,5 +1,3 @@
-
-
 import SocialLinks from "@/components/SocialLinks";
 import HeroTexts from "@/components/HeroTexts";
 import HeroImage from "@/components/HeroImage";
@@ -12,6 +10,7 @@ export const siteConfig = {
   ogImage: "bg-image.jpg",
   url: "my-portfolio-kahokwok.vercel.app",
 }
+
 export default function Home() {
   return (
    <>

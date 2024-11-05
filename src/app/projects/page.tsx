@@ -46,11 +46,6 @@ const projectsPage = () => {
       </Badge>
       <div className="flex flex-col gap-3">
         <Heading>My Projects</Heading>
-        <FramerWrapper y={0} x={200}>
-          <p className=" font-poppins text-lg w-full text-primary max-sm:text-base">
-            Content
-          </p>
-        </FramerWrapper>
       </div>
 
       <div className=" w-full flex flex-row flex-wrap gap-3 max-lg:flex-col">
