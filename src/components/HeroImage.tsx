@@ -1,14 +1,20 @@
-import logo from "../../public/logo.png";
+"use client";
+
+import logoLight from "public/logo-light.png";
+import logoDark from "public/logo-dark.png";
 import Image from "next/image"
+import { useTheme } from "next-themes";
+
+
 
 const HeroImage = ()  => {
 
-
+  const {theme} = useTheme();
 
     return(
         <>
           <Image
-          src={logo}
+          src={theme === 'dark' ? logoDark : logoLight} // Change image based on theme
           alt="logo"
           loading="eager"
           priority

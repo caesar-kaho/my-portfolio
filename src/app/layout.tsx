@@ -84,13 +84,13 @@ export default function RootLayout({
           <main
             className={cn(
               "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 max-sm:pt-20"
-            )}
-            style={{
-              backgroundImage: `url(${bgImageLight.src})`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-            }}
+            )} 
+            // style={{
+            //   backgroundImage: `url(${bgImageLight.src})`,
+            //   backgroundSize: 'cover',
+            //   backgroundRepeat: 'no-repeat',
+            //   backgroundPosition: 'center',
+            // }}
           >
             {/* NAVBAR ->  */}
             <Navbar />
