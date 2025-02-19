@@ -16,6 +16,10 @@ function TextRotator() {
         >
           <li className="text-[#2f7df4]">Team player</li>
           <li className="text-[#2f7df4]">Contributer</li>
+          <li className="text-[#2f7df4]">Problem Solver</li>
+          <li className="text-[#2f7df4]">Self-Motivated</li>
+          <li className="text-[#2f7df4]">Fast Learner</li>
+          <li className="text-[#2f7df4]">Tech Enthusiast</li>
         </ul>
       </span>
     </div>
